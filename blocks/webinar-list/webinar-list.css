@@ -1,0 +1,150 @@
+.webinars-container {
+  padding: 2rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.webinar-category-section {
+  margin-bottom: 3rem;
+}
+
+.webinar-category-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #663399;
+}
+
+.webinar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.webinar-item {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.webinar-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-color: #663399;
+}
+
+.webinar-item.past {
+  opacity: 0.7;
+  background: #f9f9f9;
+}
+
+.webinar-date {
+  flex-shrink: 0;
+  width: 80px;
+  text-align: center;
+  padding: 1rem;
+  background: #663399;
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.webinar-item.past .webinar-date {
+  background: #999;
+}
+
+.date-month {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.date-day {
+  font-size: 1.75rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.webinar-details {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.webinar-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 0.5rem 0;
+}
+
+.webinar-description {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0 0 1rem 0;
+  flex-grow: 1;
+}
+
+.webinar-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.webinar-date-full {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.webinar-register-btn {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  background: #663399;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.webinar-register-btn:hover {
+  background: #552288;
+}
+
+.webinar-status {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: #e0e0e0;
+  color: #666;
+  font-size: 0.875rem;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .webinar-item {
+    flex-direction: column;
+  }
+  
+  .webinar-date {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.75rem;
+  }
+  
+  .webinar-meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

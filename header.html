@@ -1,0 +1,95 @@
+<header class="header">
+    <div class="header-container">
+        <div class="header-logo">
+            <a href="/" aria-label="Wiley Author Services Home">
+                <svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="120" height="40" fill="#663399"/>
+                    <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="white" font-family="Arial, sans-serif" font-size="18" font-weight="bold">WILEY</text>
+                </svg>
+            </a>
+        </div>
+        <nav class="header-nav">
+            <ul class="nav-list">
+                <li><a href="/content/wiley/author-services/journal-authors">Journal Authors</a></li>
+                <li><a href="/content/wiley/author-services/reviewers">Reviewers</a></li>
+                <li><a href="/content/wiley/author-services/ethics-guidelines">Ethics</a></li>
+                <li><a href="/content/wiley/author-services/webinars">Webinars</a></li>
+            </ul>
+        </nav>
+        <div class="header-search">
+            <button class="search-button" aria-label="Search">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+                    <path d="M13 13L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+<style>
+.header {
+    background: white;
+    border-bottom: 1px solid #e0e0e0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: var(--header-height);
+}
+
+.header-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.header-logo a {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    flex-grow: 1;
+    margin: 0 2rem;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list a {
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: var(--primary-color);
+}
+
+.search-button {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.search-button:hover {
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .header-nav {
+        display: none;
+    }
+}
+</style>

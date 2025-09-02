@@ -1,0 +1,23 @@
+version: 1
+
+definitions:
+  actions:
+    default: &default
+      fetch: /api/v1/web/wiley/author-services/default
+
+  strains:
+    default:
+      <<: *default
+      condition:
+        - url.hostname: localhost
+        - url.hostname: *.hlx.page
+        - url.hostname: *.hlx.live
+        - url.hostname: *.aem.page
+        - url.hostname: *.aem.live
+
+auto:
+  - use: helix-pages
+
+headers:
+  "**/*.json":
+    Access-Control-Allow-Origin: "*"
