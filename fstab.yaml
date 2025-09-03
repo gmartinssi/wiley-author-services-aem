@@ -1,5 +1,5 @@
 mountpoints:
-  /: https://drive.google.com/drive/folders/1234567890  # Replace with your Google Drive folder ID
+  /: /content/wiley/author-services
   /content/dam: https://author-services.wiley.com/content/dam
 
 folders:

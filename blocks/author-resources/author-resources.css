@@ -1,0 +1,18 @@
+.author-resources-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.resource-item {
+  background: #f5f5f5;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.resource-link {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+}
