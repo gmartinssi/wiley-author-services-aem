@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Wiley Author Services</title>
+    <script src="/scripts/lib-franklin.js" type="module"></script>
+    <script src="/scripts/scripts.js" type="module"></script>
+    <script src="/scripts/master-detail.js" type="module"></script>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/master-detail.css">
+    <link rel="icon" href="data:,">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Wiley Author Services">
+    <meta property="og:description" content="Supporting authors throughout their publishing journey">
+</head>
+<body>
+    <!-- Updated Wiley Header -->
+    <header class="wiley-header">
+        <div class="wiley-header-top">
+            <div class="wiley-logo">
+                <a href="/" aria-label="Wiley Home">
+                    <svg width="80" height="32" viewBox="0 0 80 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="80" height="32" fill="#046A38"/>
+                        <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">WILEY</text>
+                    </svg>
+                </a>
+                <a href="/" class="wiley-logo-text">Authors</a>
+            </div>
+            <div class="wiley-header-user">
+                <span>Gabriel Martins Silva</span>
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+            </div>
+        </div>
+        <nav class="wiley-nav-bar">
+            <div class="wiley-nav-container">
+                <ul class="wiley-nav-list">
+                    <li class="wiley-nav-item">
+                        <a href="/" class="wiley-nav-link active">Home</a>
+                    </li>
+                    <li class="wiley-nav-item">
+                        <a href="/dashboard" class="wiley-nav-link">My dashboard</a>
+                    </li>
+                    <li class="wiley-nav-item">
+                        <a href="#resources" class="wiley-nav-link">
+                            <span class="wiley-nav-dropdown">
+                                Resources
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <a href="#find-journal" class="wiley-nav-button">Find a journal</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="master-detail-layout">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar-nav" role="navigation" aria-label="Main navigation">
+            <ul class="sidebar-nav-list">
+                <!-- Journal Authors Section -->
+                <li class="sidebar-nav-item expanded" data-section="journal-authors">
+                    <a href="#journal-authors" class="sidebar-nav-link">
+                        <svg class="sidebar-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 20 20">
+                            <path stroke-width="2" d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
+                            <path stroke-width="2" d="M4 5a2 2 0 012-2 1 1 0 000 2H6a2 2 0 00-2 2v6a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2 1 1 0 100-2 2 2 0 012 2v8a2 2 0 01-2 2H6a2 2 0 01-2-2V5z"/>
+                        </svg>
+                        <span>Journal Authors</span>
+                        <svg class="sidebar-nav-arrow" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M6 12l4-4-4-4"/>
+                        </svg>
+                    </a>
+                    <ul class="sidebar-submenu">
+                        <li class="sidebar-submenu-item active">
+                            <a href="#find-journal" class="sidebar-submenu-link">Find a Journal</a>
+                        </li>
+                        <li class="sidebar-submenu-item">
+                            <a href="#prepare" class="sidebar-submenu-link">Prepare</a>
+                        </li>
+                        <li class="sidebar-submenu-item">
+                            <a href="#submission" class="sidebar-submenu-link">Submission & Peer Review</a>
+                        </li>
+                        <li class="sidebar-submenu-item">
+                            <a href="#licensing" class="sidebar-submenu-link">Licensing</a>
+                        </li>
+                        <li class="sidebar-submenu-item">
+                            <a href="#open-access" class="sidebar-submenu-link">Open Access</a>
+                        </li>
+                        <li class="sidebar-submenu-item">
+                            <a href="#publication" class="sidebar-submenu-link">Publication</a>
+                        </li>
+                        <li class="sidebar-submenu-item">
+                            <a href="#promote" class="sidebar-submenu-link">Promote</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Book Authors Section -->
+                <li class="sidebar-nav-item" data-section="book-authors">
+                    <a href="#book-authors" class="sidebar-nav-link">
+                        <svg class="sidebar-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 20 20">
+                            <path stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                        </svg>
+                        <span>Book Authors</span>
+                        <svg class="sidebar-nav-arrow" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M6 12l4-4-4-4"/>
+                        </svg>
+                    </a>
+                    <ul class="sidebar-submenu">
+                        <li class="sidebar-submenu-item">
+                            <a href="#book-proposal" class="sidebar-submenu-link">Book Proposal</a>
+                        </li>
+                        <li class="sidebar-submenu-item">
+                            <a href="#book-writing" class="sidebar-submenu-link">Writing Process</a>
+                        </li>
+                        <li class="sidebar-submenu-item">
+                            <a href="#book-marketing" class="sidebar-submenu-link">Marketing</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Reviewers Section -->
+                <li class="sidebar-nav-item" data-section="reviewers">
+                    <a href="#reviewers" class="sidebar-nav-link">
+                        <svg class="sidebar-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 20 20">
+                            <path stroke-width="2" d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                        <span>Reviewers</span>
+                        <svg class="sidebar-nav-arrow" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M6 12l4-4-4-4"/>
+                        </svg>
+                    </a>
+                    <ul class="sidebar-submenu">
+                        <li class="sidebar-submenu-item">
+                            <a href="#reviewer-guidelines" class="sidebar-submenu-link">Guidelines</a>
+                        </li>
+                        <li class="sidebar-submenu-item">
+                            <a href="#reviewer-resources" class="sidebar-submenu-link">Resources</a>
+                        </li>
+                        <li class="sidebar-submenu-item">
+                            <a href="#reviewer-recognition" class="sidebar-submenu-link">Recognition</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Editors Section -->
+                <li class="sidebar-nav-item" data-section="editors">
+                    <a href="#editors" class="sidebar-nav-link">
+                        <svg class="sidebar-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 20 20">
+                            <path stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
+                        </svg>
+                        <span>Editors</span>
+                        <svg class="sidebar-nav-arrow" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M6 12l4-4-4-4"/>
+                        </svg>
+                    </a>
+                    <ul class="sidebar-submenu">
+                        <li class="sidebar-submenu-item">
+                            <a href="#editor-tools" class="sidebar-submenu-link">Editorial Tools</a>
+                        </li>
+                        <li class="sidebar-submenu-item">
+                            <a href="#editor-guidelines" class="sidebar-submenu-link">Guidelines</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Societies Section -->
+                <li class="sidebar-nav-item" data-section="societies">
+                    <a href="#societies" class="sidebar-nav-link">
+                        <svg class="sidebar-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 20 20">
+                            <path stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                        <span>Societies</span>
+                        <svg class="sidebar-nav-arrow" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M6 12l4-4-4-4"/>
+                        </svg>
+                    </a>
+                    <ul class="sidebar-submenu">
+                        <li class="sidebar-submenu-item">
+                            <a href="#society-publishing" class="sidebar-submenu-link">Publishing Services</a>
+                        </li>
+                        <li class="sidebar-submenu-item">
+                            <a href="#society-benefits" class="sidebar-submenu-link">Benefits</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Librarians Section -->
+                <li class="sidebar-nav-item" data-section="librarians">
+                    <a href="#librarians" class="sidebar-nav-link">
+                        <svg class="sidebar-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 20 20">
+                            <path stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"/>
+                        </svg>
+                        <span>Librarians</span>
+                        <svg class="sidebar-nav-arrow" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M6 12l4-4-4-4"/>
+                        </svg>
+                    </a>
+                    <ul class="sidebar-submenu">
+                        <li class="sidebar-submenu-item">
+                            <a href="#library-resources" class="sidebar-submenu-link">Resources</a>
+                        </li>
+                        <li class="sidebar-submenu-item">
+                            <a href="#library-services" class="sidebar-submenu-link">Services</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Research Networks Section -->
+                <li class="sidebar-nav-item" data-section="research-networks">
+                    <a href="#research-networks" class="sidebar-nav-link">
+                        <svg class="sidebar-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 20 20">
+                            <path stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>
+                        </svg>
+                        <span>Research Networks</span>
+                        <svg class="sidebar-nav-arrow" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M6 12l4-4-4-4"/>
+                        </svg>
+                    </a>
+                    <ul class="sidebar-submenu">
+                        <li class="sidebar-submenu-item">
+                            <a href="#network-collaboration" class="sidebar-submenu-link">Collaboration</a>
+                        </li>
+                        <li class="sidebar-submenu-item">
+                            <a href="#network-tools" class="sidebar-submenu-link">Tools</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Corporate Partners Section -->
+                <li class="sidebar-nav-item" data-section="corporate-partners">
+                    <a href="#corporate-partners" class="sidebar-nav-link">
+                        <svg class="sidebar-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 20 20">
+                            <path stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                        </svg>
+                        <span>Corporate Partners</span>
+                        <svg class="sidebar-nav-arrow" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M6 12l4-4-4-4"/>
+                        </svg>
+                    </a>
+                    <ul class="sidebar-submenu">
+                        <li class="sidebar-submenu-item">
+                            <a href="#corporate-solutions" class="sidebar-submenu-link">Solutions</a>
+                        </li>
+                        <li class="sidebar-submenu-item">
+                            <a href="#corporate-licensing" class="sidebar-submenu-link">Licensing</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="main-content" role="main">
+            <!-- Content Header -->
+            <div class="content-header">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="/">Home</a>
+                    <span class="breadcrumb-separator">›</span>
+                    <span id="current-section">Journal Authors</span>
+                </nav>
+                <h1 class="content-title">Find a Journal</h1>
+                <p class="content-description">
+                    Working on your next manuscript? Use one of the options below to find the perfect journal for your work.
+                </p>
+            </div>
+
+            <!-- Tools Section -->
+            <section class="content-section" id="find-journal">
+                <h2 class="section-title">Journal Discovery Tools</h2>
+                <div class="tools-grid">
+                    <!-- Tool Card 1 -->
+                    <div class="tool-card-enhanced">
+                        <div class="tool-card-icon">
+                            <svg fill="white" viewBox="0 0 24 24">
+                                <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="tool-card-title">Journal Finder</h3>
+                        <p class="tool-card-description">
+                            Filter based on subject and topic areas to compare journal metrics side-by-side. Search directly across 1800+ journals published by Wiley.
+                        </p>
+                        <a href="https://www.wiley.com/publish/journal-finder" class="tool-card-action" target="_blank">
+                            Access Tool
+                            <svg width="16" height="16" fill="none" viewBox="0 0 16 16">
+                                <path stroke="currentColor" stroke-width="2" d="M6 12l4-4-4-4"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Tool Card 2 -->
+                    <div class="tool-card-enhanced">
+                        <div class="tool-card-icon">
+                            <svg fill="white" viewBox="0 0 24 24">
+                                <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+                            </svg>
+                        </div>
+                        <h3 class="tool-card-title">Journal Matching Tool</h3>
+                        <p class="tool-card-description">
+                            If you already have a title and abstract for your article, find journals that match your manuscript content.
+                        </p>
+                        <a href="https://authorservices.wiley.com/journal-match/index.html" class="tool-card-action" target="_blank">
+                            Access Tool
+                            <svg width="16" height="16" fill="none" viewBox="0 0 16 16">
+                                <path stroke="currentColor" stroke-width="2" d="M6 12l4-4-4-4"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Tool Card 3 -->
+                    <div class="tool-card-enhanced">
+                        <div class="tool-card-icon">
+                            <svg fill="white" viewBox="0 0 24 24">
+                                <path d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/>
+                            </svg>
+                        </div>
+                        <h3 class="tool-card-title">Journal Recommendation Service</h3>
+                        <p class="tool-card-description">
+                            Get formal support with finding the right journal. Receive 3-5 curated recommendations from our experts.
+                        </p>
+                        <a href="https://wileyeditingservices.com/en/journal-recommendation" class="tool-card-action" target="_blank">
+                            Access Tool
+                            <svg width="16" height="16" fill="none" viewBox="0 0 16 16">
+                                <path stroke="currentColor" stroke-width="2" d="M6 12l4-4-4-4"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Resources Section -->
+            <section class="content-section" id="resources">
+                <h2 class="section-title">Downloadable Resources</h2>
+                
+                <!-- PDF Resources -->
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <svg fill="#dc2626" viewBox="0 0 24 24">
+                            <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                        </svg>
+                    </div>
+                    <div class="resource-info">
+                        <h4 class="resource-title">License Signing Guide</h4>
+                        <p class="resource-meta">PDF • 2.3 MB • Step-by-step guide</p>
+                    </div>
+                    <div class="resource-action">
+                        <a href="#" class="button" data-test="pdf-download">Download</a>
+                    </div>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <svg fill="#dc2626" viewBox="0 0 24 24">
+                            <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                        </svg>
+                    </div>
+                    <div class="resource-info">
+                        <h4 class="resource-title">Co-Author Letter Template</h4>
+                        <p class="resource-meta">PDF • 156 KB • Template document</p>
+                    </div>
+                    <div class="resource-action">
+                        <a href="#" class="button" data-test="pdf-download">Download</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Video Section -->
+            <section class="content-section" id="video-content">
+                <h2 class="section-title">Educational Videos</h2>
+                <div class="video-container" data-test="video-player">
+                    <iframe 
+                        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                        title="Open Access at Wiley"
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <h3>Open Access at Wiley</h3>
+                <p>Learn about the various open access publishing options available at Wiley and how they can benefit your research.</p>
+            </section>
+
+            <!-- Image Gallery Section -->
+            <section class="content-section" id="image-gallery">
+                <h2 class="section-title">Infographics & Visual Guides</h2>
+                <div class="tools-grid">
+                    <div class="resource-card" data-test="image-display">
+                        <img src="data:image/svg+xml,%3Csvg width='400' height='300' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='400' height='300' fill='%23f0f0f0'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23999'%3EPublication Workflow%3C/text%3E%3C/svg%3E" 
+                             alt="Publication Workflow Infographic" 
+                             style="width: 100%; border-radius: 8px;">
+                    </div>
+                    <div class="resource-card" data-test="image-display">
+                        <img src="data:image/svg+xml,%3Csvg width='400' height='300' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='400' height='300' fill='%23f0f0f0'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23999'%3ESocial Media Guide%3C/text%3E%3C/svg%3E" 
+                             alt="Social Media Promotion Guide" 
+                             style="width: 100%; border-radius: 8px;">
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2025 John Wiley & Sons, Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <style>
+        .footer {
+            background: #f5f5f5;
+            padding: 2rem;
+            text-align: center;
+            border-top: 1px solid #e0e0e0;
+        }
+    </style>
+</body>
+</html>
